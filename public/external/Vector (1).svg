@@ -1,0 +1,64 @@
+ <svg width="459" height="528" viewBox="0 0 459 528" fill="none" xmlns="http://www.w3.org/2000/svg" class="desktop4-svg">
+            <defs>
+              <!-- Gradient Definition -->
+              <linearGradient id="animatedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5ddcff" />
+                <stop offset="30%" stop-color="#3c67e3" />
+                <stop offset="60%" stop-color="#4e00c2" />
+                <stop offset="100%" stop-color="#a14ff4" />
+                <animateTransform 
+                  attributeName="gradientTransform" 
+                  type="rotate" 
+                  from="0 0.5 0.5" 
+                  to="360 0.5 0.5" 
+                  dur="3s" 
+                  repeatCount="indefinite" />
+              </linearGradient>
+              
+              <!-- Shadow filter with faster animation -->
+              <filter id="shadow" x="0" y="0" width="200%" height="200%">
+                <feDropShadow dx="5" dy="5" stdDeviation="3" flood-color="black" />
+                <animateTransform 
+                  attributeName="transform" 
+                  type="rotate" 
+                  from="0 0.5 0.5" 
+                  to="360 0.5 0.5" 
+                  dur="1.5s" 
+                  repeatCount="indefinite" />
+              </filter>
+        
+              <!-- Lighting effect filter with faster animation -->
+              <filter id="lighting" x="0" y="0" width="200%" height="200%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+                <feFlood flood-color="white" result="color"/>
+                <feComposite in2="blur" operator="in" result="shadow"/>
+                <feOffset dx="5" dy="5" result="offset"/>
+                <feMerge>
+                  <feMergeNode in="shadow"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+                <animateTransform attributeName="transform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="2s" repeatCount="indefinite"/>
+              </filter>
+            </defs>
+        
+            <!-- Image element -->
+           
+        
+            <!-- Existing Paths -->
+            <path d="M25.9347 13.8749L422.083 53.4137L441.593 523H6.00002L25.9347 13.8749Z" 
+                  fill="#FDDC68" 
+                  class="yellow-box" 
+                  filter="url(#shadow)">
+              <animate attributeName="fill" values="#FDDC68; #FFEB3B; #FDDC68" dur="2s" repeatCount="indefinite"/>
+            </path>
+            <path d="M25.9347 13.8749L422.083 53.4137L441.593 523H6.00002L25.9347 13.8749Z" 
+                  fill="none" 
+                  stroke="url(#animatedGradient)" 
+                  stroke-width="10" 
+                  filter="url(#shadow)" /> <image href="public/external/young-pretty-woman-looking-happy-goofy-with-broad-fun-loony-smile-eyes-wide-open-against-white-wall 2.png" x="0" y="0" width="459" height="528" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9473 0.249023L438.897 40.267L458.606 514.626H446.25L446.805 528H0.800415L21.1463 8.37217L37.565 10.0109L37.9473 0.249023ZM25.9347 13.8749L6.00002 523H441.593L422.083 53.4137L25.9347 13.8749ZM446.042 509.626L426.898 48.8695L42.5494 10.5084L42.7356 5.75178L434.082 44.8113L453.394 509.626H446.042Z" 
+                  fill="black" />
+        
+            <!-- Lighting effect applied to the whole SVG -->
+            <rect x="0" y="0" width="459" height="528" fill="none" filter="url(#lighting)"/>
+          </svg>

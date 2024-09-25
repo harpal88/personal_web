@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>hg
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced UI Design Gallery with Interactive 3D Effect</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="t.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        data-tag="font" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600;700&display=swap"
+        data-tag="font" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        data-tag="font" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        data-tag="font" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        data-tag="font" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+        data-tag="font" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+
+   
+</head>
+<body>
+   
+    
+     <div class="navbar" >
+        
+        <ul class="navbar-menu">
+            <li>
+                <a href="#first" class="navbar-link ButtonText">
+                    <svg class="navbar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                    </svg>
+                </a>
+            </li>
+            
+            </a></li>
+            <li><a href="#about" class="navbar-link ButtonText">About</a></li>
+            <li><a href="#projects" class="navbar-link ButtonText">Projects</a></li>
+            <li><a href="#ui-design" class="navbar-link ButtonText">UI-Design</a></li>
+            <li><a href="#achievements-awards" class="navbar-link ButtonText">Achievements</a></li>
+            <li><a href="#form" class="navbar-link ButtonText">Contact</a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="container" data-scroll-container>
+        <!--  -->
+                
+        <div id="first" class="first">
+            <!-- Top Frame -->
+            <div class="top-frame"></div>
+
+            <!-- Navigation Menu -->
+           
+            
+
+            <!-- Hero Section -->
+            <img src="public/external/arrow1352-ts88.svg" alt="arrow" class="hero-arrow" />
+
+            <div class="hero-svg-container">
+                <svg width="459" height="528" viewBox="0 0 459 528" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="hero-svg">
+                    <defs>
+                        <!-- Gradient Definition -->
+                        <linearGradient id="animatedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#5ddcff" />
+                            <stop offset="30%" stop-color="#3c67e3" />
+                            <stop offset="60%" stop-color="#4e00c2" />
+                            <stop offset="100%" stop-color="#a14ff4" />
+                            <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5"
+                                to="360 0.5 0.5" dur="3s" repeatCount="indefinite" />
+                        </linearGradient>
+
+                        <!-- Shadow filter with faster animation -->
+                        <filter id="shadow" x="0" y="0" width="200%" height="200%">
+                            <feDropShadow dx="5" dy="5" stdDeviation="3" flood-color="black" />
+                            <animateTransform attributeName="transform" type="rotate" from="0 0.5 0.5"
+                                to="360 0.5 0.5" dur="1.5s" repeatCount="indefinite" />
+                        </filter>
+
+                        <!-- Lighting effect filter with faster animation -->
+                        <filter id="lighting" x="0" y="0" width="200%" height="200%">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feFlood flood-color="white" result="color" />
+                            <feComposite in2="blur" operator="in" result="shadow" />
+                            <feOffset dx="5" dy="5" result="offset" />
+                            <feMerge>
+                                <feMergeNode in="shadow" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                            <animateTransform attributeName="transform" type="rotate" from="0 0.5 0.5"
+                                to="360 0.5 0.5" dur="2s" repeatCount="indefinite" />
+                        </filter>
+                    </defs>
+
+                    <!-- Image element -->
+                    <path d="M25.9347 13.8749L422.083 53.4137L441.593 523H6.00002L25.9347 13.8749Z" fill="#FDDC68"
+                        class="hero-yellow-box" filter="url(#shadow)">
+                        <animate attributeName="fill" values="#FDDC68; #FFC107;#ccffcc; #FFEB3B;" dur="2s"
+                            repeatCount="indefinite" />
+                    </path>
+                    <path d="M25.9347 13.8749L422.083 53.4137L441.593 523H6.00002L25.9347 13.8749Z" fill="none"
+                        stroke="url(#animatedGradient)" stroke-width="10" filter="url(#shadow)" />
+                    <image href="image1.png" x="0" y="0" width="459" height="528" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M37.9473 0.249023L438.897 40.267L458.606 514.626H446.25L446.805 528H0.800415L21.1463 8.37217L37.565 10.0109L37.9473 0.249023ZM25.9347 13.8749L6.00002 523H441.593L422.083 53.4137L25.9347 13.8749ZM446.042 509.626L426.898 48.8695L42.5494 10.5084L42.7356 5.75178L434.082 44.8113L453.394 509.626H446.042Z"
+                        fill="black" />
+
+                    <!-- Lighting effect applied to the whole SVG -->
+                    <rect x="0" y="0" width="459" height="528" fill="none" filter="url(#lighting)" />
+                </svg>
+            </div>
+
+            <span class="hero-greeting H1">
+                <span>Hi, I'm</span><br />
+                <span class="hero-name">Harpalsinh </span><span>Chudasama –</span><br />
+                <span> Software Developer &amp; Creative Designer.</span>
+            </span>
+            <span class="hero-subtext H4">
+                <span>Building Solutions with Code &amp; Design</span>
+            </span>
+            <div class="hero-button-container">
+                <button class="hero-button">
+                    <div class="hero-button-content">
+                        <span class="hero-button-text ButtonText">
+                            <span>Discover My Work</span>
+                        </span>
+                        <img src="public/external/icon1352-f79j.svg" alt="Icon" class="hero-button-icon" />
+                    </div>
+                </button>
+            </div>
+            <div class="hero-button-container-secondary">
+                <button class="hero-button-secondary">
+                    <div class="hero-button-content-secondary">
+                        <img src="public/external/icon1352-gcel.svg" alt="Icon"
+                            class="hero-button-icon-secondary" />
+                        <span class="hero-button-text-secondary ButtonText">
+                            <span>DOWNLOAD CV</span>
+                        </span>
+                    </div>
+                </button>
+            </div>
+            <img src="public/external/ellipse11352-6msr.svg" alt="Ellipse" class="hero-ellipse" />
+        </div>
+        <div id="about" class="about-section">
+
+            <div class="about-section-header"></div>
+            <img src="public/external/vector1352-6oy3.svg" alt="Vector1352" class="about-section-vector" />
+            <div class="about-section-content">
+
+                <div class="about-section-heading">
+                    <img src="public/external/rectangle71352-gau-200h.png" alt="Rectangle71352"
+                        class="about-section-divider" />
+                    <span class="about-section-title H1"><span>About Me</span></span>
+                </div>
+            </div>
+            <div class="about-section-skills">
+
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <span class="skill-category-title H5">
+                            <span>Technical expertise</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skills-wrapper">
+                    <div class="skill-item">
+                        <div class="skill-box">
+                            <img src="public/external/frame261352-xe3.svg" alt="Frame261352" class="skill-icon" />
+                            <span class="skill-title H5">
+                                <span>Software Development</span>
+                            </span>
+                            <span class="skill-description BodyText">
+                                <span>Extensive experience in creating scalable and maintainable
+                                    applications.</span>
+                            </span>
+                        </div>
+                        <div class="skill-separator">
+                            <span class="separator-text">
+                                <span>------------</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-box">
+                            <img src="public/external/frame261352-iqmk.svg" alt="Frame261352" class="skill-icon" />
+                            <span class="skill-title H5">
+                                <span>Freelance Success</span>
+                            </span>
+                            <span class="skill-description BodyText">
+                                <span>Successfully completed multiple freelance projects in for multiple
+                                    clients</span>
+                            </span>
+                        </div>
+                        <div class="skill-separator">
+                            <span class="separator-text">
+                                <span>------------</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-box">
+                            <img src="public/external/frame261352-xe3.svg" alt="Frame261352" class="skill-icon" />
+                            <span class="skill-title H5">
+                                <span>API Integration</span>
+                            </span>
+                            <span class="skill-description BodyText">
+                                <span>Proficient in integrating third-party APIs to enhance application functionality and user experience.</span>
+                            </span>
+                        </div>
+                        <div class="skill-separator">
+                            <span class="separator-text">
+                                <span>------------</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-box">
+                            <img src="public/external/frame261352-nx.svg" alt="Frame261352" class="skill-icon" />
+                            <span class="skill-title H5">
+                                <span>UI Designing</span>
+                            </span>
+                            <span class="skill-description BodyText">
+                                <span>Specializing in visual design, I craft aesthetically pleasing and accessible
+                                    interfaces</span>
+                            </span>
+                        </div>
+                        <div class="skill-separator">
+                            <span class="separator-text">
+                                <span>------------</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-box">
+                            <img src="public/external/frame261352-egbw.svg" alt="Frame261352" class="skill-icon" />
+                            <span class="skill-title H5">
+                                <span>Wireframing</span>
+                            </span>
+                            <span class="skill-description BodyText">
+                                <span>I create detailed wireframes that serve as blueprints for intuitive and
+                                    efficient user interfaces</span>
+                            </span>
+                        </div>
+                        <div class="skill-separator">
+                            <span class="separator-text">
+                                <span>------------</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-box">
+                            <img src="public/external/frame261352-iqmk.svg" alt="Frame261352" class="skill-icon" />
+                            <span class="skill-title H5">
+                                <span>Version Control</span>
+                            </span>
+                            <span class="skill-description BodyText">
+                                <span>Experienced in using Git , enabling efficient collaboration and management of codebases.</span>
+                            </span>
+                        </div>
+                        <div class="skill-separator">
+                            <span class="separator-text">
+                                <span>------------</span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="projects" class="projects-section" id="timeline-1">
+            <div class="top-frame"></div>
+
+            <div class="projects-container">
+                <span class="section-title H1"><span>Projects</span></span>
+                <div class="projects-timeline">
+                    <!-- Dots Image -->
+                    <div class="timeline-dots">
+                        <img src="public/external/frame121352-1wq8.svg" alt="Timeline Dots"
+                            class="timeline-dots-image" />
+                    </div>
+
+                    <!-- First Project -->
+                    <div class="project-item timeline-item">
+                        <div class="project-content-right">
+                            <span class="project-title H3"><span>Project 1: Scanned PDF Data Extraction
+                                    Engine</span></span></br>
+                            <span class="project-description BodyText">
+                                <span>
+                                    Developed a Python engine for extracting data from scanned PDFs, overcoming
+                                    challenges like zoom, angle, noise, and variations. Utilized JSON mappings for
+                                    field detection and stored extracted data in an SQL database. Implemented secure
+                                    API endpoints for data upload and retrieval.
+                                </span>
+                            </span>
+                            <img src="public/external/frame954691352-10xm.svg" alt="Frame954691352"
+                                class="desktop4-frame95469" />
+                        </div>
+                        <div class="project-image-left">
+                            <img src="public/external/first_project.png" alt="Project 1 Thumbnail"
+                                class="project-image" />
+                        </div>
+                    </div>
+
+                    <!-- Second Project -->
+                    <div class="project-item timeline-item">
+                        <div class="project-image-right">
+                            <img src="public/external/second_project.png" alt="Project 2 Thumbnail"
+                                class="project-image" />
+                        </div>
+                        <div class="project-content-left">
+                            <span class="project-title H3"><span>Project 2: Analytics Dashboard</span></span></br>
+                            <span class="project-description BodyText">
+                                <span>
+                                    Developed a comprehensive analytics dashboard using React.js, designed to
+                                    provide real-time data visualization and insights. The dashboard integrates
+                                    multiple data sources, offering customizable widgets and interactive charts. It
+                                    features user-friendly navigation, filtering options, and secure access
+                                    controls, enabling users to monitor key metrics and trends effectively.
+                                </span>
+                            </span>
+                            <img src="public/external/frame954691352-10xm.svg" alt="Frame954691352"
+                                class="desktop4-frame95469" />
+                        </div>
+                    </div>
+
+                    <!-- Third Project -->
+                    <div class="project-item timeline-item">
+                        <div class="project-content-right">
+                            <span class="project-title H3"><span>Project 3: Custom Video Player</span></span></br>
+                            <span class="project-description BodyText">
+                                <span>
+                                    Designed and developed a custom video player application, leveraging HTML5,
+                                    CSS3, and JavaScript. The player supports a range of video formats and includes
+                                    features such as playback controls, fullscreen mode, customizable subtitles, and
+                                    responsive design. Additionally, it integrates with a backend API for content
+                                    streaming, providing a seamless and engaging viewing experience across devices.
+                                </span>
+                            </span>
+                            <img src="public/external/frame954691352-10xm.svg" alt="Frame954691352"
+                                class="desktop4-frame95469" />
+                        </div>
+                        <div class="project-image-left">
+                            <img src="public/external/third_project.png" alt="Project 3 Thumbnail"
+                                class="project-image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ui-design" class="ui-design">
+            <section data-bgcolor="#bcb8ad" data-textcolor="#032f35">
+                <div>
+                    <h1> <span>UI DESIGN</span> <span>GALLERY</span></h1>
+                    <p class="ui-p">Showcases of UI/UX designs including wireframes, prototypes, and final designs.</p>
+                </div>
+            </section>
+            <!-- First Horizontal Scrolling Section -->
+            <section id="sectionPin" class="horizontal-scroll">
+                <div class="pin-wrap">
+                    <h2 class="sectionPin1-h2">A Collection of Wireframe Designs for Various User Interfaces, Including Mobile Apps and Admin Panels, Showcasing Key Concepts and Annotations.</h2>
+            
+                    <div class="im-container" data-text="wirframe pc">
+                        <img class="im" src="harpal showcase/wirframe pc.png" alt="Design Image 1" loading="lazy">
+                    </div>
+            
+                    <div class="im-container" data-text="Wireframe 2">
+                        <img class="im" src="harpal showcase/wireframe 2.png" alt="Design Image 2" loading="lazy">
+                    </div>
+            
+                    <div class="im-container" data-text="Mobile Wireframe">
+                        <img class="im" src="harpal showcase/mobile wireframe.png" alt="Design Image 3" loading="lazy">
+                    </div>
+            
+                    <div class="im-container" data-text="admin ui">
+                        <img class="im" src="harpal showcase/admin ui.png" alt="Design Image 4" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            
+            <section id="sectionPin2" class="horizontal-scroll">
+                <div class="pin-wrap ">
+                    <h2 class="sectionPin2-h2">An Exploration of Finalized UI Designs, Highlighting the Visual Aesthetics and Functionality of SaaS Dashboards, Agricultural Tools, and E-commerce Platforms.</h2>
+            
+                    <div class="im-container" data-text="nike ui">
+                        <img class="im" src="harpal showcase/nike ui.png" alt="Design Image 4" loading="lazy">
+                    </div>
+            
+                    <div class="im-container" data-text="Agricultural UI">
+                        <img class="im" src="harpal showcase/agri ui 1.png" alt="Design Image 5"loading="lazy">
+                    </div>
+            
+                    <div class="im-container" data-text="Dashboard">
+                        <img class="im" src="harpal showcase/dashboard ui.png" alt="Design Image 6"loading="lazy">
+                    </div>
+            
+                    <div class="im-container" data-text="agri ui 5">
+                        <img class="im" src="harpal showcase/agri ui 5.png" alt="Design Image 7"loading="lazy">
+                    </div>
+                </div>
+            </section>
+             <!-- Image Card Section -->
+             <section class="image-card-section">
+                <h2>Additional UI Designs</h2>
+                <ul class="image-card-list">
+                    <!-- First Card -->
+                    <li class="image-card">
+                        <div class="image-card-content" style="background-image: url('harpal showcase/ecom ui.png');">
+                            <img class="card-im" src="harpal showcase/ecom ui.png" loading="lazy" alt="E-commerce UI" />
+                        </div>
+                        <div class="image-card-description">
+                            <h2>E-commerce UI</h2>
+                            <p>An innovative user interface designed for seamless online shopping experiences.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Second Card -->
+                    <li class="image-card">
+                        <div class="image-card-content" style="background-image: url('harpal showcase/saas 3.png');" loading="lazy">
+                            <img class="card-im" src="harpal showcase/saas 3.png" loading="lazy" alt="SaaS UI 1" />
+                        </div>
+                        <div class="image-card-description">
+                            <h2>SaaS UI 1</h2>
+                            <p>A sleek and functional interface designed for managing SaaS platforms effectively.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Third Card -->
+                    <li class="image-card">
+                        <div class="image-card-content" style="background-image: url('harpal showcase/agri ui 4.png');" loading="lazy">
+                            <img class="card-im" src="harpal showcase/agri ui 4.png" loading="lazy" alt="Agricultural UI 1" />
+                        </div>
+                        <div class="image-card-description">
+                            <h2>Agricultural UI 1</h2>
+                            <p>A user-centric interface for managing agricultural tools and data.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Fourth Card -->
+                    <li class="image-card">
+                        <div class="image-card-content" style="background-image: url('harpal showcase/agri ui 2.png');" loading="lazy">
+                            <img class="card-im" src="harpal showcase/agri ui 2.png" loading="lazy" alt="Agricultural UI 2" />
+                        </div>
+                        <div class="image-card-description">
+                            <h2>Agricultural UI 2</h2>
+                            <p>An enhanced interface for agricultural management with improved usability.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Fifth Card -->
+                    <li class="image-card">
+                        <div class="image-card-content" style="background-image: url('harpal showcase/saas 1.png');" loading="lazy">
+                            <img class="card-im" src="harpal showcase/saas 1.png" loading="lazy" alt="SaaS UI 2" />
+                        </div>
+                        <div class="image-card-description">
+                            <h2>SaaS UI 2</h2>
+                            <p>An intuitive interface designed for managing SaaS applications with ease.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Sixth Card -->
+                    <li class="image-card">
+                        <div class="image-card-content" style="background-image: url('harpal showcase/nike ui 2.png');" loading="lazy">
+                            <img class="card-im" src="harpal showcase/nike ui 2.png" loading="lazy" alt="Nike UI" />
+                        </div>
+                        <div class="image-card-description">
+                            <h2>Nike UI</h2>
+                            <p>A dynamic user interface for Nike, focusing on branding and user engagement.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Seventh Card -->
+                    <li class="image-card">
+                        <div class="image-card-content" style="background-image: url('harpal showcase/saas 2.png');" loading="lazy">
+                            <img class="card-im" src="harpal showcase/saas 2.png" loading="lazy" alt="SaaS UI 3" />
+                        </div>
+                        <div class="image-card-description">
+                            <h2>SaaS UI 3</h2>
+                            <p>A refined SaaS interface with enhanced analytics features.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Eighth Card -->
+                    <li class="image-card">
+                        <div class="image-card-content" style="background-image: url('harpal showcase/agri ui 3.png');" loading="lazy">
+                            <img class="card-im" src="harpal showcase/agri ui 3.png" loading="lazy" alt="Agricultural UI 3" />
+                        </div>
+                        <div class="image-card-description">
+                            <h2>Agricultural UI 3</h2>
+                            <p>A refined agricultural management interface for better user interaction.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Ninth Card -->
+                    <li class="image-card">
+                        <div class="image-card-content" style="background-image: url('harpal showcase/saas 4.png');" loading="lazy">
+                            <img class="card-im" src="harpal showcase/saas 4.png" loading="lazy" alt="SaaS UI 4" />
+                        </div>
+                        <div class="image-card-description">
+                            <h2>SaaS UI 4</h2>
+                            <p>An advanced SaaS interface, focusing on user experience and data visualization.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            
+            
+            
+        </div>
+        <div id="achievements-awards" class="achievements-awards-section">
+            <h2 class="achievements-title H1">Achievements & Awards</h2>
+            <div class="testimonial-wrapper">
+                <div class="testimonial-card">
+                    <span class="card-number">1</span>
+                    <img src="public/external/image51352-h6k6-1000w.png" alt="Project Image"
+                        class="testimonial-image">
+                    <div class="testimonial-content rotated-card">
+                        <span class="testimonial-quote H5">
+                            “Harpalsinh was great. We really liked the entry he submitted and he was super
+                            responsive when following up about it.”
+                        </span>
+                        <div class="testimonial-rating">
+                            <img src="public/external/star1352-dxi6.svg" alt="Star" class="rating-star">
+                            <img src="public/external/star1352-kstl.svg" alt="Star" class="rating-star">
+                            <img src="public/external/star1352-c93c.svg" alt="Star" class="rating-star">
+                            <img src="public/external/star1352-95ra.svg" alt="Star" class="rating-star">
+                            <img src="public/external/star1352-9q7k.svg" alt="Star" class="rating-star">
+                            <span class="rating-score SmallText">5.0</span>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image-circle"></div>
+
+                            <div class="author-info">
+                                <span class="author-name BodyText">cistudios541</span>
+                                <span class="author-location SmallText">Fort Lauderdale, United States</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-summary">
+                    <div class="summary-description">
+                        <span class="summary-title H3">
+                            Designed a website for a New Talent Hiring Platform, winning a contest against 40
+                            participants.
+                        </span>
+                        <img src="public/external/frame101352-3ozq.svg" alt="Icon" class="summary-icon"></div>
+                    <span class="summary-description BodyText">
+                        Developed a visually appealing design that aligns with the platform's brand identity,
+                        enhancing its appeal to both job seekers and employers.
+                    </span>
+                    <div class="project-tags SmallText">
+                        <span class="tag">Website Design</span>
+                        <span class="tag">Product Design</span>
+                        <span class="tag">Graphic Design</span>
+                        <span class="tag">Glassmorphism</span>
+                        <span class="tag">Cards</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-wrapper">
+                <span class="card-number">2</span>
+
+                <div class="testimonial-card">
+                    <img src="public/external/image51352-ypmh-1000w.png" alt="Project Image"
+                        class="testimonial-image" />
+                    <div class="testimonial-content rotated-card">
+                        <span class="testimonial-quote H5">
+                            “Excellent work.”
+                        </span>
+                        <div class="testimonial-rating">
+                            <img src="public/external/star1352-dxi6.svg" alt="Star" class="rating-star">
+                            <img src="public/external/star1352-kstl.svg" alt="Star" class="rating-star">
+                            <img src="public/external/star1352-c93c.svg" alt="Star" class="rating-star">
+                            <img src="public/external/star1352-95ra.svg" alt="Star" class="rating-star">
+                            <img src="public/external/star1352-9q7k.svg" alt="Star" class="rating-star">
+                            <span class="rating-score SmallText">5.0</span>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image-circle"></div>
+                            <div class="author-info">
+                                <span class="author-name BodyText">Aashish S</span>
+                                <span class="author-location SmallText">Gurgaon, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-summary">
+                    <div class="summary-description">
+                        <span class="summary-title H3">
+                            Developed a secure login page for a Deeptech HRTech SAAS, placing first among 20
+                            competitors.
+                        </span>
+                        <img src="public/external/frame101352-3ozq.svg" alt="Icon" class="summary-icon">
+                    </div>
+                    <span class="summary-description BodyText">
+                        Designed a clean, intuitive interface that simplifies the login process, enhancing user
+                        accessibility and satisfaction.
+                    </span>
+                    <div class="project-tags SmallText">
+                        <span class="tag">Website Design</span>
+                        <span class="tag">Product Design</span>
+                        <span class="tag">Graphic Design</span>
+                        <span class="tag">Glassmorphism</span>
+                        <span class="tag">Cards</span>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div id="form" class="form-wrapper">
+            <header class="form-header H1">Contact Me</header>
+          
+            <form id="minimalistic-form" class="form-content">
+              <div class="form-group bodytext">
+                <input id="form-name" type="text" placeholder="NAME">
+              </div>
+              <div class="form-group">
+                <input id="form-email" type="email" placeholder="E-MAIL">
+              </div>
+              <div class="form-group">
+                <textarea id="form-message" placeholder="MESSAGE"></textarea>
+              </div>
+              <div class="form-group">
+                <input id="form-submit" type="submit" value="GO!">
+              </div>
+            </form>
+          </div>
+        
+        
+        <!-- Scroll Card and Footer Section -->
+
+  
+    <!-- Footer -->
+   
+      
+    <footer id="footer">
+        <div class="col col1">
+            <h3 class="footer-title">Personal Website</h3>
+            <div class="social">
+                <a href="#" target="_blank" class="link">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/codepen.png" alt="Codepen" />
+                </a>
+                <a href="#" target="_blank" class="link">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/xbox.png" alt="X" />
+                </a>
+                <a href="#" target="_blank" class="link">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" alt="YouTube" />
+                </a>
+                <a href="#" target="_blank" class="link">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter" />
+                </a>
+                <a href="#" target="_blank" class="link">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" />
+                </a>
+                <a href="#" target="_blank" class="link">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" />
+                </a>
+            </div>
+            
+        </div>
+        <div class="col col2">
+            <p>About</p>
+            <p>Our mission</p>
+            <p>Privacy Policy</p>
+            <p>Terms of service</p>
+        </div>
+        <div class="col col3">
+            <p>Services</p>
+            <p>Products</p>
+            <p>Join our team</p>
+            <p>Partner with us</p>
+        </div>
+        <div class="backdrop"></div>
+    </footer>
+    
+   
+          
+          
+  </div>
+  
+          
+          
+          
+          
+           
+          
+          
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+
+    <script></script>
+    <script>// Initialize Locomotive Scroll
+        // Initialize Locomotive Scroll
+// Initialize Locomotive Scroll
+// Initialize Locomotive Scroll
+// Initialize Locomotive Scroll
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.container'),
+    smooth: true,
+    multiplier: 1,
+    class: 'is-reveal',
+});
+
+// Update ScrollTrigger when Locomotive Scroll updates
+scroll.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy(".container", {
+    scrollTop(value) {
+        return arguments.length ? scroll.scrollTo(value, 0, 0) : scroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+        return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+    },
+    pinType: document.querySelector(".container").style.transform ? "transform" : "fixed"
+});
+
+ScrollTrigger.addEventListener("refresh", () => scroll.update());
+ScrollTrigger.refresh();
+
+// Event listeners for navbar links for smooth scrolling
+document.querySelectorAll('.navbar-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        // Use LocomotiveScroll to smooth scroll to the target section
+        scroll.scrollTo(target);
+    });
+});
+
+// Horizontal Scroll Initialization
+function initHorizontalScroll(sectionId) {
+    const pinWrap = document.querySelector(`#${sectionId} .pin-wrap`);
+    const horizontalScrollLength = pinWrap.scrollWidth - window.innerWidth;
+
+    gsap.to(`#${sectionId} .pin-wrap`, {
+        scrollTrigger: {
+            trigger: `#${sectionId}`,
+            scroller: ".container",
+            scrub: 1,
+            pin: true,
+            start: "top top",
+            end: `+=${horizontalScrollLength}`,
+            anticipatePin: 1
+        },
+        x: -horizontalScrollLength,
+        ease: "power2.out"
+    });
+}
+
+// Initialize horizontal scrolling sections
+initHorizontalScroll("sectionPin");
+initHorizontalScroll("sectionPin2");
+
+
+
+
+
+function apply3DTiltEffect() {
+    document.querySelectorAll(".pin-wrap img").forEach(image => {
+        let isMouseOver = false;
+        let currentX = 0;
+        let currentY = 0;
+        let targetX = 0;
+        let targetY = 0;
+        let requestId;
+
+        image.addEventListener("mousemove", (e) => {
+            const rect = image.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            targetX = ((centerY - y) / centerY) * 30; // Slightly increased for more noticeable effect
+            targetY = ((x - centerX) / centerX) * 30;
+
+            if (!isMouseOver) {
+                isMouseOver = true;
+                requestId = requestAnimationFrame(() => updateTransform(image));
+            }
+        });
+
+        image.addEventListener("mouseleave", () => {
+            isMouseOver = false;
+            cancelAnimationFrame(requestId);
+            image.style.transition = "transform 0.2s ease-out"; // Smooth transition back to normal
+            image.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+        });
+
+        function updateTransform(image) {
+            if (!isMouseOver) return;
+
+            currentX += (targetX - currentX) * 0.1;
+            currentY += (targetY - currentY) * 0.1;
+
+            image.style.transform = `perspective(1000px) rotateX(${currentX}deg) rotateY(${currentY}deg) scale(1)`; // Slight scale for depth effect
+            requestId = requestAnimationFrame(() => updateTransform(image));
+        }
+    });
+}
+
+apply3DTiltEffect();
+
+
+ScrollTrigger.addEventListener("refresh", () => scroll.update());
+ScrollTrigger.refresh();
+gsap.from("h1 span", {
+    scrollTrigger: {
+        trigger: "h1",
+        scroller: ".container",
+        start: "top 90%",
+        end: "bottom 10%",
+        scrub: 2,
+        toggleActions: "play none none reset"
+    },
+    y: 100,
+    opacity: 0,
+    rotationX: 90,  // Adds a 3D flip effect
+    stagger: {
+        each: 0.2,
+        from: "start",  // Starts staggering from the first element
+        ease: "back.out(1.7)" // Bounces out a bit for a more playful effect
+    },
+    ease: "power1.out",
+    color: "#e3857a",  // Changes color during the animation
+    duration: 1.5  // Slows down the animation slightly
+});
+gsap.from(".ui-p", {
+    scrollTrigger: {
+        trigger: ".ui-p",
+        scroller: ".container",
+        start: "top 90%",
+        end: "bottom 60%",
+        toggleActions: "play none none reset"
+    },
+    y: 50,
+    opacity: 0,
+    scale: 0.9,  // Adds a slight scale effect for a pop-in feel
+    ease: "elastic.out(1, 0.5)",  // Adds a springy effect to the animation
+    duration: 1.2  // Extends the duration slightly
+});
+gsap.from(".sectionPin1-h2, .sectionPin2-h2", {
+    scrollTrigger: {
+        trigger: ".sectionPin1-h2, .sectionPin2-h2",
+        scroller: ".container",
+        start: "top 85%",  // Start the animation when the h2 is 85% down the viewport
+        end: "bottom 15%",  // End when it's 15% from the bottom
+        scrub: 2,
+        toggleActions: "play none none reset"
+    },
+    opacity: 0,  // Start fully transparent
+    x: -10,  // Start 100px to the left
+    rotationZ: 10,  // Adds a slight tilt for a dynamic effect
+    ease: "power2.out",  // Smooth ease-out effect
+    duration: 1.5  // Duration of the animation
+});
+
+    </script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.6
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const target = entry.target;
+            const contentLeft = target.querySelector('.project-content-left');
+            const contentRight = target.querySelector('.project-content-right');
+
+            if (entry.isIntersecting) {
+                contentLeft?.classList.add('timeline-item--active');
+                contentRight?.classList.add('timeline-item--active');
+            } else {
+                contentLeft?.classList.remove('timeline-item--active');
+                contentRight?.classList.remove('timeline-item--active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.project-item').forEach(item => observer.observe(item));
+});
+
+
+        </script>
+        
+ 
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const skillBoxes = document.querySelectorAll('.skill-item .skill-box');
+                const skillSeparators = document.querySelectorAll('.skill-item .skill-separator');
+                const container = document.querySelector('.skills-wrapper');
+    
+                const imageMap = {
+                    '.skill-box-1': 'image2.jpg',
+                    '.skill-box-2': 'image6.jpg',
+                    '.skill-box-3': 'image3.jpg',
+                    '.skill-box-4': 'image4.jpg',
+                    '.skill-box-5': 'image5.jpg',
+                    '.skill-box-6': 'image.jpg',
+                };
+    
+                const colorMap = {
+                    '.skill-box-1': '#ffcccc',
+                    '.skill-box-2': '#ccffcc',
+                    '.skill-box-3': '#ccccff',
+                    '.skill-box-4': '#ffffcc',
+                    '.skill-box-5': '#ffccff',
+                    '.skill-box-6': '#ccffff',
+                };
+    
+                const separatorColorMap = {
+                    '.skill-separator-1': '#ffcccc',
+                    '.skill-separator-2': '#ccffcc',
+                    '.skill-separator-3': '#ccccff',
+                    '.skill-separator-4': '#ffffcc',
+                    '.skill-separator-5': '#ffccff',
+                    '.skill-separator-6': '#ccffff',
+                };
+    
+                const handleMouseOver = (event) => {
+                    const target = event.currentTarget;
+                    const index = Array.from(skillBoxes).indexOf(target) + 1;
+                    const separatorIndex = Array.from(skillSeparators).indexOf(target) + 1;
+    
+                    const className = `.skill-box-${index}`;
+                    const separatorClassName = `.skill-separator-${separatorIndex}`;
+                    const imageUrl = imageMap[className];
+                    const backgroundColor = colorMap[className];
+                    const separatorBackgroundColor = separatorColorMap[separatorClassName];
+    
+                    if (imageUrl) {
+                        container.style.backgroundImage = `url(${imageUrl})`;
+                        container.style.backgroundSize = 'cover';
+                        container.style.backgroundPosition = 'center';
+                        container.style.transition = 'background-image ease';
+                    }
+    
+                    if (backgroundColor) {
+                        target.style.backgroundColor = backgroundColor;
+                        target.style.color = 'white';
+                        target.style.transition = 'background-color 0.2s ease';
+                    }
+    
+                    if (separatorBackgroundColor) {
+                        target.style.backgroundColor = separatorBackgroundColor;
+                        target.style.color = 'white';
+                        target.style.transition = 'background-color 0.2s ease';
+                    }
+                };
+    
+                const handleMouseOut = (event) => {
+                    const target = event.currentTarget;
+    
+                    target.style.backgroundColor = '';
+                    target.style.color = '';
+                    target.style.transition = 'background-color 2s ease';
+    
+                    container.style.backgroundImage = '';
+                    container.style.transition = 'background-image 3s ease';
+                };
+    
+                skillBoxes.forEach(box => {
+                    box.addEventListener('mouseover', handleMouseOver);
+                    box.addEventListener('mouseout', handleMouseOut);
+                });
+    
+                skillSeparators.forEach(separator => {
+                    separator.addEventListener('mouseover', handleMouseOver);
+                    separator.addEventListener('mouseout', handleMouseOut);
+                });
+    
+                container.addEventListener('mouseover', () => {
+                    container.classList.add('hovered');
+                });
+    
+                container.addEventListener('mouseout', () => {
+                    container.classList.remove('hovered');
+                });
+            });
+        </script>
+
+</body>
+</html>

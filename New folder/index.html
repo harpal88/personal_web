@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+  
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+  
+      body {
+        margin: 0;
+      }
+  
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+  
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+  
+      button {
+        background-color: transparent;
+      }
+  
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+  
+      button,
+      select {
+        text-transform: none;
+      }
+  
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        appearance: button;
+      }
+  
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+  
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+  
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+  
+      input {
+        padding: 2px 4px;
+      }
+  
+      img {
+        display: block;
+      }
+  
+      html {
+        scroll-behavior: smooth
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: sans-serif;
+        font-size: 16px;
+      }
+  
+      body {
+        font-weight: 500;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+  
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+  </head>
+
+<body>
+  <link rel="stylesheet" href="style.css" />
+    <link href="index.css" rel="stylesheet" />
+  <div>
+
+    <div class="desktop4-container">
+      <div class="desktop4-desktop4">
+        
+        <!-- Hero Section -->
+        <div class="desktop4-group12">
+          <svg width="459" height="528" viewBox="0 0 459 528" fill="none" xmlns="http://www.w3.org/2000/svg" class="desktop4-svg">
+            <defs>
+              <!-- Gradient Definition -->
+              <linearGradient id="animatedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#5ddcff" />
+                <stop offset="30%" stop-color="#3c67e3" />
+                <stop offset="60%" stop-color="#4e00c2" />
+                <stop offset="100%" stop-color="#a14ff4" />
+                <animateTransform 
+                  attributeName="gradientTransform" 
+                  type="rotate" 
+                  from="0 0.5 0.5" 
+                  to="360 0.5 0.5" 
+                  dur="3s" 
+                  repeatCount="indefinite" />
+              </linearGradient>
+              
+              <!-- Shadow filter with faster animation -->
+              <filter id="shadow" x="0" y="0" width="200%" height="200%">
+                <feDropShadow dx="5" dy="5" stdDeviation="3" flood-color="black" />
+                <animateTransform 
+                  attributeName="transform" 
+                  type="rotate" 
+                  from="0 0.5 0.5" 
+                  to="360 0.5 0.5" 
+                  dur="1.5s" 
+                  repeatCount="indefinite" />
+              </filter>
+        
+              <!-- Lighting effect filter with faster animation -->
+              <filter id="lighting" x="0" y="0" width="200%" height="200%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+                <feFlood flood-color="white" result="color"/>
+                <feComposite in2="blur" operator="in" result="shadow"/>
+                <feOffset dx="5" dy="5" result="offset"/>
+                <feMerge>
+                  <feMergeNode in="shadow"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+                <animateTransform attributeName="transform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="2s" repeatCount="indefinite"/>
+              </filter>
+            </defs>
+        
+            <!-- Image element -->
+            <path d="M25.9347 13.8749L422.083 53.4137L441.593 523H6.00002L25.9347 13.8749Z" 
+                  fill="#FDDC68" 
+                  class="yellow-box" 
+                  filter="url(#shadow)">
+              <animate attributeName="fill" values="#FDDC68; #FFC107;#ccffcc; #FFEB3B;"
+              dur="2s" repeatCount="indefinite"/>
+            </path>
+            <path d="M25.9347 13.8749L422.083 53.4137L441.593 523H6.00002L25.9347 13.8749Z" 
+                  fill="none" 
+                  stroke="url(#animatedGradient)" 
+                  stroke-width="10" 
+                  filter="url(#shadow)" /> 
+            <image href="image1.png" x="0" y="0" width="459" height="528" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9473 0.249023L438.897 40.267L458.606 514.626H446.25L446.805 528H0.800415L21.1463 8.37217L37.565 10.0109L37.9473 0.249023ZM25.9347 13.8749L6.00002 523H441.593L422.083 53.4137L25.9347 13.8749ZM446.042 509.626L426.898 48.8695L42.5494 10.5084L42.7356 5.75178L434.082 44.8113L453.394 509.626H446.042Z" 
+                  fill="black" />
+        
+            <!-- Lighting effect applied to the whole SVG -->
+            <rect x="0" y="0" width="459" height="528" fill="none" filter="url(#lighting)"/>
+          </svg>
+        </div>
+        
+        <span class="desktop4-text147 H1">
+          <span class="desktop4-text148">Hi, I'm</span>
+          <br />
+          <span class="desktop4-text150"></span>
+          <span class="desktop4-text151">Harpalsinh</span>
+          <span>Chudasama – Software Developer &amp;</span>
+          <br />
+          <span>Creative Designer.</span>
+        </span>
+        <span class="desktop4-text155 H4">
+          <span>Building Solutions with Code &amp; Design</span>
+        </span>
+        <div class="desktop4-group13">
+          <button class="desktop4-button">
+            <div class="desktop4-group2">
+              <span class="desktop4-text157 ButtonText">
+                <span>Discover My Work</span>
+              </span>
+              <img src="public/external/icon1352-f79j.svg" alt="Icon1352" class="desktop4-icon" />
+            </div>
+          </button>
+        </div>
+        <div class="desktop4-group14">
+          <button class="desktop4-button1">
+            <div class="desktop4-group3">
+              <img src="public/external/icon1352-gcel.svg" alt="icon1352" class="desktop4-icon1" />
+              <span class="desktop4-text159 ButtonText">
+                <span>DOWNLOAD CV</span>
+              </span>
+            </div>
+          </button>
+        </div>
+        <img src="public/external/rectangle31352-kqyh-200h.png" alt="Rectangle31352" class="desktop4-rectangle3" />
+        <img src="public/external/ellipse11352-6msr.svg" alt="Ellipse11352" class="desktop4-ellipse1" />
+
+        <!-- Navigation Menu -->
+        <div class="desktop4-group15">
+          <div class="desktop4-menu">
+            <div class="desktop4-group16">
+              <div class="desktop4-home">
+                <img src="public/external/vector1352-lwtj.svg" alt="Vector1352" class="desktop4-vector5" />
+              </div>
+            </div>
+            <span class="desktop4-text161 ButtonText">
+              <span>About</span>
+            </span>
+            <span class="desktop4-text163 ButtonText">
+              <span>Projects</span>
+            </span>
+            <span class="desktop4-text165 ButtonText">
+              <span>Contact me</span>
+            </span>
+          </div>
+        </div>
+        <img src="public/external/arrow1352-ts88.svg" alt="arrow1352" class="desktop4-arrow" />
+
+        <!-- About Section -->
+        <div class="desktop4-aboutus">
+          <div class="desktop4-frame95480"></div>
+          <img src="public/external/vector1352-6oy3.svg" alt="Vector1352" class="desktop4-vector3" />
+          <div class="desktop4-group11">
+            <span class="desktop4-text114 SmallText">
+              <span>
+                a versatile software engineer and UI/UX designer based in
+                Surat, Gujarat. I hold a B.E. in Information Technology..
+              </span>
+            </span>
+            <div class="desktop4-group10">
+              <img src="public/external/rectangle71352-gau-200h.png" alt="Rectangle71352" class="desktop4-rectangle7" />
+              <span class="desktop4-text116 H1"><span>About Me</span></span>
+            </div>
+          </div>
+          <div class="desktop4-frame41">
+            <div class="desktop4-container1">
+              <div class="desktop4-frame37">
+                <span class="desktop4-text118 H3">
+                  <span>Technical expertise</span>
+                </span>
+                <span class="desktop4-text120"><span>Key Skills</span></span>
+              </div>
+            </div>
+            <div class="desktop4-frame40">
+              <div class="desktop4-frame33">
+                <div class="desktop4-frame28">
+                  <img src="public/external/frame261352-xe3.svg" alt="Frame261352" class="desktop4-frame26" />
+                  <span class="desktop4-text122 H4">
+                    <span>Software Development</span>
+                  </span>
+                  <span class="desktop4-text124 BodyText">
+                    <span>
+                      Extensive experience in creating scalable and
+                      maintainable applications.
+                    </span>
+                  </span>
+                </div>
+                <div class="desktop4-frame31">
+                  <span class="desktop4-text126">
+                    <span>------------</span>
+                  </span>
+                </div>
+              </div>
+              <div class="desktop4-frame34">
+                <div class="desktop4-frame281">
+                  <img src="public/external/frame261352-iqmk.svg" alt="Frame261352" class="desktop4-frame261" />
+                  <span class="desktop4-text128 H4">
+                    <span>Freelance Success</span>
+                  </span>
+                  <span class="desktop4-text130 BodyText">
+                    <span>
+                      Successfully completed multiple freelance projects
+                    </span>
+                  </span>
+                </div>
+                <div class="desktop4-frame311">
+                  <span class="desktop4-text132">
+                    <span>------------</span>
+                  </span>
+                </div>
+              </div>
+              <div class="desktop4-container2">
+                <div class="desktop4-frame282">
+                  <img src="public/external/frame261352-nx.svg" alt="Frame261352" class="desktop4-frame262" />
+                  <span class="desktop4-text134 H4">
+                    <span>UI Designing</span>
+                  </span>
+                  <span class="desktop4-text136 BodyText">
+                    <span>
+                      Specializing in visual design, I craft aesthetically
+                      pleasing and accessible interfaces
+                    </span>
+                  </span>
+                </div>
+                <div class="desktop4-frame35">
+                  <div class="desktop4-frame312">
+                    <span class="desktop4-text138">
+                      <span>------------</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop4-frame36">
+                <div class="desktop4-frame283">
+                  <img src="public/external/frame261352-egbw.svg" alt="Frame261352" class="desktop4-frame263" />
+                  <span class="desktop4-text140 H4">
+                    <span>Wireframing</span>
+                  </span>
+                  <span class="desktop4-text142 BodyText">
+                    <span>
+                      "I create detailed wireframes that serve as blueprints
+                      for intuitive and efficient user interfaces
+                    </span>
+                  </span>
+                </div>
+                <div class="desktop4-frame313">
+                  <span class="desktop4-text144">
+                    <span>------------</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="desktop4-projects">
+          <div class="desktop4-projects1">
+            <span class="desktop4-text100 H1"><span>Projects</span></span>
+            <div class="desktop4-group9">
+              <div class="desktop4-frame462">
+                <img src="public/external/line41352-i3vr.svg" alt="Line41352" class="desktop4-line4" />
+                <img src="public/external/frame121352-1wq8.svg" alt="Frame121352" class="desktop4-frame12" />
+              </div>
+              <div class="desktop4-group6">
+                <span class="desktop4-text102 H3">
+                  <span>Project 1: Scanned PDF Data Extraction Engine</span>
+                </span>
+                <span class="desktop4-text104 BodyText">
+                  <span>
+                    Developed a Python engine for extracting data from scanned
+                    PDFs, overcoming challenges like zoom, angle, noise, and
+                    variations. Utilized JSON mappings for field detection and
+                    stored extracted data in an SQL database. Implemented
+                    secure API endpoints for data upload and retrieval.
+                  </span>
+                </span>
+                <img src="public/external/frame954691352-10xm.svg" alt="Frame954691352" class="desktop4-frame95469" />
+              </div>
+              <div class="desktop4-group7">
+                <span class="desktop4-text106 H3">
+                  <span>Project 2: Analytics Dashboard</span>
+                </span>
+                <span class="desktop4-text108 BodyText">
+                  <span>
+                    Developed a comprehensive analytics dashboard using
+                    React.js, designed to provide real-time data visualization
+                    and insights. The dashboard integrates multiple data
+                    sources, offering customizable widgets and interactive
+                    charts. It features user-friendly navigation, filtering
+                    options, and secure access controls, enabling users to
+                    monitor key metrics and trends effectively.
+                  </span>
+                </span>
+                <img src="public/external/frame954701352-sa2s.svg" alt="Frame954701352" class="desktop4-frame95470" />
+              </div>
+              <div class="desktop4-group8">
+                <span class="desktop4-text110 H3">
+                  <span>Project 3: Custom Video Player</span>
+                </span>
+                <span class="desktop4-text112 BodyText">
+                  <span>
+                    Designed and developed a custom video player application,
+                    leveraging HTML5, CSS3, and JavaScript. The player
+                    supports a range of video formats and includes features
+                    such as playback controls, fullscreen mode, customizable
+                    subtitles, and responsive design. Additionally, it
+                    integrates with a backend API for content streaming,
+                    providing a seamless and engaging viewing experience
+                    across devices.
+                  </span>
+                </span>
+                <img src="public/external/frame954711352-a7m7c.svg" alt="Frame954711352" class="desktop4-frame95471" />
+              </div>
+              <div class="desktop4-frame95472">
+                <img src="public/external/image21352-a1g6-300w.png" alt="image21352" class="desktop4-image2" />
+              </div>
+              <div class="desktop4-frame95473">
+                <img src="public/external/image11352-itz9-300h.png" alt="image11352" class="desktop4-image1" />
+              </div>
+              <div class="desktop4-frame95474">
+                <img src="public/external/image31352-r1o-300h.png" alt="image31352" class="desktop4-image3" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements & Awards Section -->
+        <div class="desktop4-achievements-awards">
+          <span class="desktop4-text098 H1">
+            <span>Achievements &amp; Awards</span>
+          </span>
+          <div class="desktop4-frame95479">
+            <div class="desktop4-frame1101">
+              <div class="desktop4-frame77">
+                <img src="public/external/image51352-h6k6-1000w.png" alt="image51352" class="desktop4-image5" />
+                <div class="desktop4-testimonialcard">
+                  <span class="desktop4-text054 H4">
+                    <span>
+                      “Harpalsinh was great. We really liked the entry he
+                      submitted and he was super responsive when following up
+                      about it.”
+                    </span>
+                  </span>
+                  <div class="desktop4-frame1102">
+                    <img src="public/external/star1352-dxi6.svg" alt="Star1352" class="desktop4-star" />
+                    <img src="public/external/star1352-kstl.svg" alt="Star1352" class="desktop4-star01" />
+                    <img src="public/external/star1352-c93c.svg" alt="Star1352" class="desktop4-star02" />
+                    <img src="public/external/star1352-95ra.svg" alt="Star1352" class="desktop4-star03" />
+                    <img src="public/external/star1352-9q7k.svg" alt="Star1352" class="desktop4-star04" />
+                    <span class="desktop4-text056 H4"><span>5.0</span></span>
+                  </div>
+                  <div class="desktop4-frame21">
+                    <img src="public/external/ellipse51352-6s9y-200w.png" alt="Ellipse51352"
+                      class="desktop4-ellipse5" />
+                    <div class="desktop4-frame11">
+                      <span class="desktop4-text058 H3">
+                        <span>cistudios541</span>
+                      </span>
+                      <span class="desktop4-text060 NavigationLinks">
+                        <span>Fort lauderdale, United States</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desktop4-frame1103">
+              <span class="desktop4-text062 H3">
+                <span>
+                  Designed a website for a New Talent Hiring Platform, winning
+                  a contest against 40 participants.
+                </span>
+              </span>
+              <img src="public/external/frame101352-3ozq.svg" alt="Frame101352" class="desktop4-frame101" />
+            </div>
+            <span class="desktop4-text064 BodyText">
+              <span>
+                Developed a visually appealing design that aligns with the
+                platform's brand identity, enhancing its appeal to both job
+                seekers and employers.
+              </span>
+            </span>
+            <div class="desktop4-frame1104">
+              <div class="desktop4-component6">
+                <span class="desktop4-text066">
+                  <span>Website Design</span>
+                </span>
+              </div>
+              <div class="desktop4-component5">
+                <span class="desktop4-text068">
+                  <span>Product Design</span>
+                </span>
+              </div>
+              <div class="desktop4-component2">
+                <span class="desktop4-text070">
+                  <span>Graphic Design</span>
+                </span>
+              </div>
+              <div class="desktop4-component3">
+                <span class="desktop4-text072">
+                  <span>Glassmorphism</span>
+                </span>
+              </div>
+              <div class="desktop4-component4">
+                <span class="desktop4-text074"><span>Cards</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="desktop4-frame95476">
+            <div class="desktop4-frame1105">
+              <div class="desktop4-frame1106">
+                <div class="desktop4-frame1107">
+                  <div class="desktop4-frame771">
+                    <img src="public/external/image51352-ypmh-1000w.png" alt="image51352" class="desktop4-image51" />
+                    <div class="desktop4-testimonialcard1">
+                      <span class="desktop4-text076 H4">
+                        <span>“Excellent work.”</span>
+                      </span>
+                      <div class="desktop4-frame1108">
+                        <img src="public/external/star1352-08bj.svg" alt="Star1352" class="desktop4-star05" />
+                        <img src="public/external/star1352-cxid.svg" alt="Star1352" class="desktop4-star06" />
+                        <img src="public/external/star1352-ako.svg" alt="Star1352" class="desktop4-star07" />
+                        <img src="public/external/star1352-u1g.svg" alt="Star1352" class="desktop4-star08" />
+                        <img src="public/external/star1352-zcm.svg" alt="Star1352" class="desktop4-star09" />
+                        <span class="desktop4-text078 H4">
+                          <span>5.0</span>
+                        </span>
+                      </div>
+                      <div class="desktop4-frame22">
+                        <img src="public/external/ellipse61352-wpa-200h.png" alt="Ellipse61352"
+                          class="desktop4-ellipse6" />
+                        <div>
+                          <span class="desktop4-text080 H3">
+                            <span>Aashish S</span>
+                          </span><br>
+                          <span class="desktop4-text082 NavigationLinks">
+                            <span>GURGAON, India</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop4-frame1109">
+                <span class="desktop4-text084 H3">
+                  <span>
+                    Developed a secure login page for a Deeptech HRTech SAAS,
+                    placing first among 20 competitors.
+                  </span>
+                </span>
+                <img src="public/external/frame101352-6naaf.svg" alt="Frame101352" class="desktop4-frame102" />
+              </div>
+              <span class="desktop4-text086 BodyText">
+                <span>
+                  Designed a clean, intuitive interface that simplifies the
+                  login process, enhancing user accessibility and
+                  satisfaction.
+                </span>
+              </span>
+              <div class="desktop4-frame1110">
+                <div class="desktop4-component61">
+                  <span class="desktop4-text088">
+                    <span>Website Design</span>
+                  </span>
+                </div>
+                <div class="desktop4-component51">
+                  <span class="desktop4-text090">
+                    <span>Product Design</span>
+                  </span>
+                </div>
+                <div class="desktop4-component21">
+                  <span class="desktop4-text092">
+                    <span>Graphic Design</span>
+                  </span>
+                </div>
+                <div class="desktop4-component31">
+                  <span class="desktop4-text094">
+                    <span>Glassmorphism</span>
+                  </span>
+                </div>
+                <div class="desktop4-component41">
+                  <span class="desktop4-text096"><span>Cards</span></span>
+                </div>
+              </div>
+              <div class="desktop4-frame1111"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="desktop4-divider"></div>
+        <span class="desktop4-text050 H2">
+          <span>UI/UX Design Portfolio</span>
+        </span>
+        <span class="desktop4-text052 BodyText">
+          <span>
+            Showcases of UI/UX designs created using Figma, including
+            wireframes, prototypes, and final designs.
+          </span>
+        </span>
+
+        <!-- Contact Section -->
+        <div class="desktop4-contactme">
+          <div class="desktop4-frame43">
+            <span class="desktop4-text032 H1"><span>Contact me</span></span>
+            <span class="desktop4-text034 BodyText">
+              <span>
+                Cultivating Connections: Reach Out and Connect with Me
+              </span>
+            </span>
+          </div>
+          <div class="desktop4-frame46">
+            <div class="desktop4-frame45">
+              <div class="desktop4-frame44">
+                <span class="desktop4-text036"><span>Name</span></span>
+              </div>
+              <div class="desktop4-frame451">
+                <span class="desktop4-text038"><span>Email</span></span>
+              </div>
+            </div>
+            <div class="desktop4-frame461">
+              <div class="desktop4-frame441">
+                <span class="desktop4-text040">
+                  <span>Phone Number</span>
+                </span>
+              </div>
+              <div class="desktop4-frame452">
+                <span class="desktop4-text042">
+                  <span>Service of Interest</span>
+                </span>
+                <div class="desktop4-arrow-down2">
+                  <div class="desktop4-iconly-light-arrow-down2">
+                    <div class="desktop4-arrow-down21">
+                      <img src="public/external/stroke11352-lga.svg" alt="Stroke11352" class="desktop4-stroke1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desktop4-frame47">
+              <div class="desktop4-frame442">
+                <span class="desktop4-text044"><span>Timeline</span></span>
+              </div>
+              <div class="desktop4-frame453">
+                <span class="desktop4-text046">
+                  <span>Project Details...</span>
+                </span>
+              </div>
+            </div>
+            <div class="desktop4-frame49">
+              <div class="desktop4-frame1">
+                <span class="desktop4-text048 ENG16Bold">
+                  <span>Send</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="desktop4-footer">
+          <div class="desktop4-frame61">
+            <div class="desktop4-frame60">
+              <span class="desktop4-text H2"><span>Logo</span></span>
+              <span class="desktop4-text002 BodyText">
+                <span>
+                  Lorem ipsum dolor sit amet consectetur. Imperdiet convallis
+                  blandit felis ligula aliquam Lorem ipsum dolor sit amet
+                  consectetur. Imperdiet convallis blandit felis ligula
+                  aliquam
+                </span>
+              </span>
+            </div>
+            <div class="desktop4-frame3">
+              <img src="public/external/frame81352-cbvk.svg" alt="Frame81352" class="desktop4-frame8" />
+              <img src="public/external/frame91352-lyfq.svg" alt="Frame91352" class="desktop4-frame9" />
+              <img src="public/external/frame101352-j2x.svg" alt="Frame101352" class="desktop4-frame10" />
+              <img src="public/external/frame111352-ffak.svg" alt="Frame111352" />
+            </div>
+          </div>
+          <div class="desktop4-frame68">
+            <div class="desktop4-frame62">
+              <span class="desktop4-text004 H3"><span>Home</span></span>
+              <div class="desktop4-frame63">
+                <span class="desktop4-text006 BodyText">
+                  <span>Services</span>
+                </span>
+                <span class="desktop4-text008 BodyText">
+                  <span>Portfolio</span>
+                </span>
+                <span class="desktop4-text010 BodyText">
+                  <span>About Me</span>
+                </span>
+                <span class="desktop4-text012 BodyText">
+                  <span>Contact</span>
+                </span>
+              </div>
+            </div>
+            <div class="desktop4-frame631">
+              <span class="desktop4-text014 H3"><span>Services</span></span>
+              <div class="desktop4-frame632">
+                <span class="desktop4-text016 BodyText">
+                  <span>Softwares</span>
+                </span>
+                <span class="desktop4-text018 BodyText">
+                  <span>Web Design</span>
+                </span>
+                <span class="desktop4-text020 BodyText">
+                  <span>Dashboard Design</span>
+                </span>
+                <span class="desktop4-text022 BodyText">
+                  <span>Wireframe</span>
+                </span>
+              </div>
+            </div>
+            <div class="desktop4-frame64">
+              <span class="desktop4-text024 H3">
+                <span>Contact Info</span>
+              </span>
+              <div class="desktop4-frame633">
+                <div class="desktop4-frame65">
+                  <img src="public/external/vector1352-x2fj.svg" alt="Vector1352" class="desktop4-vector" />
+                  <span class="desktop4-text026 BodyText">
+                    <span>9900 9990 99</span>
+                  </span>
+                </div>
+                <div class="desktop4-frame66">
+                  <img src="public/external/vector1352-sgip.svg" alt="Vector1352" class="desktop4-vector1" />
+                  <span class="desktop4-text028 BodyText">
+                    <span>aaaaaaaaaaaa</span>
+                  </span>
+                </div>
+                <div class="desktop4-frame67">
+                  <img src="public/external/vector1352-n6td.svg" alt="Vector1352" class="desktop4-vector2" />
+                  <span class="desktop4-text030 BodyText">
+                    <span>abc@example.com</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const mainBoxes = document.querySelectorAll('.desktop4-frame28, .desktop4-frame281, .desktop4-frame282, .desktop4-frame283');
+      const dashBoxes = document.querySelectorAll('.desktop4-frame31, .desktop4-frame311, .desktop4-frame35, .desktop4-frame313');
+      const container = document.querySelector('.desktop4-frame40');
+
+      const imageMap = {
+          '.desktop4-frame28': 'image2.jpg',
+          '.desktop4-frame281': 'image.jpg',
+          '.desktop4-frame282': 'image3.jpg',
+          '.desktop4-frame283': 'image4.jpg',
+      };
+
+      const colorMap = {
+          '.desktop4-frame28': '#ffcccc',
+          '.desktop4-frame281': '#ccffcc',
+          '.desktop4-frame282': '#ccccff',
+          '.desktop4-frame283': '#ffffcc',
+          '.desktop4-frame31': '#ffccff',
+          '.desktop4-frame311': '#ccffff',
+          '.desktop4-frame35': '#ffcccc',
+          '.desktop4-frame313': '#cccccc',
+      };
+
+      const handleMouseOver = (event) => {
+          const target = event.currentTarget;
+          const imageUrl = imageMap['.' + target.classList[0]];
+          const backgroundColor = colorMap['.' + target.classList[0]];
+
+          container.style.backgroundImage = `url(${imageUrl})`;
+          container.style.backgroundSize = 'cover';
+          container.style.backgroundPosition = 'center';
+          container.style.transition = 'background-image ease';
+
+          target.style.backgroundColor = backgroundColor;
+          target.style.color = 'white';
+          target.style.transition = 'background-color 0.2s ease';
+      };
+
+      const handleMouseOut = (event) => {
+          const target = event.currentTarget;
+
+          target.style.backgroundColor = '';
+          target.style.color = '';
+          target.style.transition = 'background-color 2s ease';
+
+          container.style.backgroundImage = '';
+          container.style.transition = 'background-image ease';
+      };
+
+      mainBoxes.forEach(box => {
+          box.addEventListener('mouseover', handleMouseOver);
+          box.addEventListener('mouseout', handleMouseOut);
+      });
+
+      dashBoxes.forEach(box => {
+          box.addEventListener('mouseover', handleMouseOver);
+          box.addEventListener('mouseout', handleMouseOut);
+      });
+
+      // Add event listeners for container hover
+      container.addEventListener('mouseover', () => {
+          container.classList.add('hovered');
+      });
+
+      container.addEventListener('mouseout', () => {
+          container.classList.remove('hovered');
+      });
+    });
+  </script>
+</body>
+
+</html>
+
