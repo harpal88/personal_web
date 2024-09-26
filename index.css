@@ -293,8 +293,10 @@ font-size: 1.6vw;}
     padding: clamp(10px, 1vw, 1.5rem);
     flex-direction: row;
     gap: 8px;
-  }.contact-button-text-mobile.ButtonText {
-    font-size: 2vw;
+  }
+  .button-text-mobile.ButtonText,
+  .contact-button-text-mobile.ButtonText {
+    font-size: 3vw;
     font-weight: 600;
   }
   .hero-button-icon-mobile{
@@ -755,7 +757,7 @@ width: 8px;  }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3vw;
+    gap: 6vw;
   }
 
   /* Hero Image Section */
@@ -766,7 +768,7 @@ width: 8px;  }
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 30vw;
+    margin-top: 39vw;
     margin-bottom: 5vw;
   }
 
@@ -778,7 +780,7 @@ width: 8px;  }
     margin: 0 10px;
   }
   .hero-image-mobile {
-    width:80vw;
+    width:95vw;
     position: relative;
     z-index: 1;
     filter: brightness(0.1);
@@ -895,8 +897,8 @@ width: 8px;  }
 
   /* About Section */
   .hero-about-mobile.H5 {
-    font-weight: 100;
-    color: rgb(163 163 163);
+    font-weight: 300;
+    color: rgb(125 125 125);
     font-size: 5vw;
   }
 
