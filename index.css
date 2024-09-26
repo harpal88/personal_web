@@ -63,7 +63,7 @@ a{
   flex-direction: column;
 }
 
-#loader div {
+#section1,#section2,#section3 {
   font-family:'poppins'; /* This will adapt to any font */
   color: white;
   letter-spacing: 0.1em;
@@ -72,13 +72,14 @@ a{
   transition: opacity 1s ease-out; /* Smooth fade out */  
   justify-content: center;
   align-items: center;
-padding-left: 20vw;
+  padding-left: 18vw;
 margin: 5px;
 }
 #section2{
 font-size: 1.6vw;}
 @media (max-width: 768px) {
   #loader div {
+    
     font-size: 3vw; /* Smaller font size on smaller screens */
   }
 }
