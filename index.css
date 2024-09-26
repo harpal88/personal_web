@@ -85,7 +85,7 @@ font-size: 1.6vw;}
 
 @media (max-width: 480px) {
   #loader div {
-    font-size: 4vw; /* Further reduction on very small screens */
+    font-size: 3vw; /* Further reduction on very small screens */
   }
 }
 
