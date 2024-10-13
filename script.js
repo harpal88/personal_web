@@ -685,3 +685,35 @@ document.addEventListener('click', (e) => {
 
 
 
+document.getElementById('minimalistic-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Get form values
+    const name = document.getElementById('form-name').value.trim();
+    const email = document.getElementById('form-email').value.trim();
+    const message = document.getElementById('form-message').value.trim();
+
+    // Simple form validation
+    if (!name || !email || !message) {
+        showMessage("Nah, it's not working lol. Just email me at hpc7984@gmail.com", 'success');
+        return;
+    }
+
+    // Simulate a successful form submission
+    showMessage("Nah, it's not working lol. Just email me at hpc7984@gmail.com", 'success');
+    
+    // Optionally clear the form after submission
+    document.getElementById('minimalistic-form').reset();
+});
+
+function showMessage(message, type) {
+    const messageContainer = document.getElementById('message-container');
+    messageContainer.textContent = message;
+    messageContainer.className = `message-container ${type}`;
+    messageContainer.style.display = 'block';
+
+    // Hide message after 5 seconds
+    setTimeout(() => {
+        messageContainer.style.display = 'none';
+    }, 5000);
+}
