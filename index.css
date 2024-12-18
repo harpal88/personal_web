@@ -576,7 +576,7 @@ width: 8px;  }
   width: 30vw;
   position: relative;
   z-index: 1;
-  filter: brightness(0.05);
+  filter: brightness(0.01);
 }
 
 /* Speech Bubble Styling */
